@@ -1,0 +1,267 @@
+:root {
+  --primary-text-color: #fff;
+  --dark-text-color: #252b42;
+  --second-text-color: #737373;
+  --accent-color: #8d5cf6;
+  --dark-bcg-color: #26335d;
+  --lines-color: #e74040;
+}
+
+body {
+  background-color: var(--dark-bcg-color);
+  color: var(--primary-text-color);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: flex;
+  max-width: 100%;
+}
+
+.container {
+  width: 1080px;
+  padding: 0 15px 0;
+  margin: 0 auto;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  font-family: inherit;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  color: inherit;
+}
+
+.container.header {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.1px;
+
+  margin-right: 76px;
+  margin-left: 84px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  gap: 21px;
+}
+.nav-link {
+  font-size: 14px;
+  line-height: 1.71;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.auth {
+  display: flex;
+  margin-left: auto;
+  margin-right: 85px;
+  gap: 45px;
+  align-items: center;
+}
+.login {
+  font-size: 14px;
+  line-height: 1.57px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: transparent;
+}
+
+.join {
+  font-size: 14px;
+  line-height: 1.57px;
+  text-transform: uppercase;
+
+  width: fit-content;
+  height: 52px;
+  padding: 15px 25px;
+  background: #8d5cf6;
+  border-radius: 5px;
+}
+
+.hero {
+  padding: 148px 132px 148px;
+}
+
+.header-hero {
+  min-height: 777px;
+  min-width: 1440px;
+  background-image: url(../images/hero-cover.svg),
+    url(../images/hero-pink-bg.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, cover;
+  background-position: 95.5% 90%, center;
+}
+
+.hero-wrap {
+  width: 573px;
+}
+
+.hero-suptitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  margin-bottom: 30px;
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 1.38;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.hero-subtitle {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.hero-btn-list {
+  display: flex;
+}
+
+.hero-join {
+  width: fit-content;
+  height: 52px;
+  background: var(--accent-color);
+  border-radius: 5px;
+  padding: 15px 40px;
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: inherit;
+}
+
+.learn {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.57;
+  padding: 15px 40px;
+  display: block;
+  width: fit-content;
+  height: 52px;
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+}
+
+.courses {
+  padding: 160px 179px;
+}
+
+.courses-header {
+  width: 691px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.practice-suptitle {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+.courses-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.subtitle-first-line {
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.courses-subtitle {
+  font-size: 14px;
+  line-height: 1.43;
+  width: 463px;
+  min-height: 40px;
+  margin: 0 auto;
+}
+
+.courses-card-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  gap: 30px;
+}
+
+.courses-card {
+  width: 328px;
+  height: fit-content;
+  padding: 35px 40px;
+  background-color: #fff;
+}
+
+.icon {
+  display: block;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+}
+
+.card-title {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: var(--dark-bcg-color);
+}
+
+.card-title::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 2px;
+  background: var(--lines-color);
+  margin-top: 20px;
+}
+
+.card-desc {
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  margin: 20px auto 0;
+  width: 136px;
+  min-height: 60px;
+  color: var(--second-text-color);
+}

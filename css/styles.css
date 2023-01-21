@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --primary-text-color: #fff;
   --dark-text-color: #252b42;
@@ -5,6 +15,8 @@
   --accent-color: #8d5cf6;
   --dark-bcg-color: #26335d;
   --lines-color: #e74040;
+  --price-color: #ff7b52;
+  --muted-color: #bdbdbd;
 }
 
 body {
@@ -113,19 +125,27 @@ img {
   border-radius: 5px;
 }
 
-.hero {
-  padding: 148px 132px 148px;
+.btn-join-icon {
+  width: 12px;
+  height: 10px;
+  margin-left: 15px;
 }
 
-.header-hero {
-  min-height: 777px;
-  min-width: 1440px;
+.hero {
+  padding: 148px 132px 148px;
+  height: 682px;
+}
+
+/* header,
+.hero {
+  max-width: 1440px;
+  margin: 0 auto;
   background-image: url(../images/hero-cover.svg),
     url(../images/hero-pink-bg.png);
   background-repeat: no-repeat, no-repeat;
   background-size: auto, cover;
-  background-position: 95.5% 90%, center;
-}
+  background-position: 100% 99%, center;
+} */
 
 .hero-wrap {
   width: 573px;
@@ -182,7 +202,7 @@ img {
   padding: 160px 179px;
 }
 
-.courses-header {
+.section-header {
   width: 691px;
   margin: 0 auto;
   text-align: center;
@@ -194,7 +214,7 @@ img {
   color: var(--accent-color);
   margin-bottom: 10px;
 }
-.courses-title {
+.section-title {
   font-weight: 700;
   font-size: 40px;
   line-height: 1.25;
@@ -207,7 +227,7 @@ img {
   margin: 0 auto;
 }
 
-.courses-subtitle {
+.section-subtitle {
   font-size: 14px;
   line-height: 1.43;
   width: 463px;
@@ -229,7 +249,7 @@ img {
   background-color: #fff;
 }
 
-.icon {
+.card-icon {
   display: block;
   width: 72px;
   height: 72px;
@@ -263,5 +283,271 @@ img {
   margin: 20px auto 0;
   width: 136px;
   min-height: 60px;
+  color: var(--second-text-color);
+}
+.pop-courses {
+  padding: 160px 195px;
+  background-image: url(../images/courses-girl.svg);
+  background-repeat: no-repeat;
+  background-position: 25% 25%;
+}
+
+.pop-courses-wrap {
+  width: 381px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+  margin-left: auto;
+  margin-bottom: 104px;
+}
+
+.pop-courses-title::before {
+  content: "";
+  display: block;
+  width: 94px;
+  height: 7px;
+  background: var(--lines-color);
+  margin-bottom: 35px;
+}
+
+.pop-courses-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.25;
+}
+.pop-courses-desc {
+  font-size: 14px;
+  line-height: 1.43;
+  width: 300px;
+}
+.pop-courses-learn {
+  font-size: 14px;
+  line-height: 1.71;
+  background: transparent;
+  color: var(--accent-color);
+}
+
+.btn-learn-arrow {
+  display: inline-block;
+  width: 9px;
+  height: 16px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.package {
+  padding: 160px 0 240px;
+}
+
+.package-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 80px;
+}
+.package-list-item {
+  width: 348px;
+  background-color: var(--primary-text-color);
+}
+
+.card-wrap {
+  padding: 25px 25px 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.img-wrap {
+  position: relative;
+}
+
+.sale-icon {
+  position: absolute;
+  top: 17px;
+  left: 16px;
+  width: 61px;
+  height: 34px;
+}
+
+.product-actions {
+  position: absolute;
+  bottom: 24px;
+  right: 104px;
+  display: flex;
+  gap: 10px;
+}
+
+.action-btn {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background-color: var(--primary-text-color);
+  border-radius: 44.7857px;
+}
+
+.action-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.welcome-wrap {
+  display: flex;
+  gap: 180px;
+}
+
+.star-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.grade {
+  font-size: 12px;
+  min-width: 50px;
+  padding: 5px;
+  line-height: 1.33;
+  background-color: var(--dark-bcg-color);
+  border-radius: 20px;
+}
+
+.suptitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--accent-color);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: var(--dark-text-color);
+}
+.desc {
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--second-text-color);
+}
+
+.download-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.sales {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--second-text-color);
+}
+
+.price-wrap {
+  display: flex;
+  gap: 5px;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: var(--price-color);
+}
+.price.previous {
+  color: var(--muted-color);
+}
+
+.arrow {
+  vertical-align: text-bottom;
+}
+
+.learn-card-btn {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--accent-color);
+  background-color: transparent;
+  width: fit-content;
+  height: 44px;
+  padding: 10px 20px;
+  border: 1px solid var(--accent-color);
+  border-radius: 37px;
+}
+
+.designer-section {
+  padding: 160px 0;
+}
+
+.designer-list {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 96px;
+}
+
+.designer-wrap {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.designer-card {
+  width: 501px;
+  background-color: var(--primary-text-color);
+}
+
+.designer-img {
+  margin-bottom: 30px;
+}
+
+.designer-words {
+  width: 307px;
+  height: 100px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--second-text-color);
+  margin-bottom: 15px;
+}
+
+.odd {
+  width: 159px;
+  height: 120px;
+}
+
+.grade-list{
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.rating-star{
+  width: 22px;
+  height: 22px;
+}
+
+.designer-name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: var(--dark-text-color);
+  margin-bottom: 5px;
+}
+.position {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
   color: var(--second-text-color);
 }

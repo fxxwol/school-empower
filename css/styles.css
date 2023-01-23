@@ -143,6 +143,7 @@ img {
   background-repeat: no-repeat, no-repeat;
   background-size: auto, cover;
   background-position: 100% 99%, center;
+  background-attachment: scroll;
 }
 
 .hero-wrap {

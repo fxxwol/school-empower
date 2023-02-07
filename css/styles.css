@@ -68,10 +68,16 @@ img {
   color: inherit;
 }
 
-.container.header {
-  display: flex;
+.header-section{
+  position:absolute;
+  width: 100%;
+  top:0;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.container.header {
+  display: flex;
 }
 
 .logo {
@@ -132,18 +138,14 @@ img {
 
 .hero {
   padding: 148px 132px 148px;
-  height: 682px;
-}
-
-.header-hero {
-  max-width: 1440px;
-  margin: 0 auto;
+  max-width:1440px;
+  margin: 0  auto;
+  height: 764px;
   background-image: url(../images/hero-cover.svg),
     url(../images/hero-pink-bg.png);
   background-repeat: no-repeat, no-repeat;
   background-size: auto, cover;
-  background-position: 100% 99%, center;
-  background-attachment: scroll;
+  background-position: 100% 115%, center;
 }
 
 .hero-wrap {
